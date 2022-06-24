@@ -136,10 +136,15 @@ vim /etc/ansible/hosts
 ```
 
 ```shell
-[myvirtualmachines]
+[ubuntu]
 192.168.75.128
 192.168.75.129
 192.168.75.130
+
+[fedora]
+192.168.75.131
+192.168.75.132
+192.168.75.133
 ```
 
 ```shell

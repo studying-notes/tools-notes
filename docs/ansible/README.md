@@ -29,5 +29,6 @@ draft: false  # 草稿
 
 - [Ansible 入门教程](quickstart/README.md)
 - [Inventory 教程](quickstart/intro_inventory.md)
+- [临时命令 (ad hoc commands) 简介](quickstart/intro_adhoc.md)
 
 ## 基础语法
