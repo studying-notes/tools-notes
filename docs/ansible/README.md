@@ -28,5 +28,6 @@ draft: false  # 草稿
 ## 基础用法
 
 - [Ansible 入门教程](quickstart/README.md)
+- [Inventory 教程](quickstart/intro_inventory.md)
 
 ## 基础语法

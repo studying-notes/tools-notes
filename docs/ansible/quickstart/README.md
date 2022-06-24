@@ -12,10 +12,12 @@ draft: true  # 草稿
 ---
 
 > https://docs.ansible.com/ansible/latest/
+> https://cn-ansibledoc.readthedocs.io/zh_CN/latest/
 
 - [安装](#安装)
 - [配置](#配置)
 - [测试主机](#测试主机)
+- [批量执行简单命令](#批量执行简单命令)
 - [建立节点清单](#建立节点清单)
 - [元组](#元组)
 - [创建变量](#创建变量)
@@ -100,6 +102,14 @@ ansible all -m ping
 }
 ```
 
+## 批量执行简单命令
+
+```shell
+ansible all -a "apt update && apt upgrade -y"
+
+ansible all -a "apt-get -o Acquire::http::proxy='http://192.168.0.12:7890' upgrade -y"
+```
+
 ## 建立节点清单
 
 清单列出了节点的基本信息。使用清单文件，Ansible 可以通过单个命令管理大量主机。
@@ -119,6 +129,17 @@ virtualmachines:
       ansible_host: 192.168.75.129
     vm03:
       ansible_host: 192.168.75.130
+```
+
+```shell
+vim /etc/ansible/hosts
+```
+
+```shell
+[myvirtualmachines]
+192.168.75.128
+192.168.75.129
+192.168.75.130
 ```
 
 ```shell
