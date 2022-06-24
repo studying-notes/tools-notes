@@ -18,6 +18,10 @@ draft: false  # 草稿
 
 > 纸上得来终觉浅，学到过知识点分分钟忘得一干二净，今后无论学什么，都做好笔记吧。
 
+官方文档
+
+https://docs.ansible.com/ansible/latest/user_guide/index.html#table-of-contents
+
 ## 目录结构
 
 - `assets/images`: 笔记配图
@@ -30,5 +34,6 @@ draft: false  # 草稿
 - [Ansible 入门教程](quickstart/README.md)
 - [Inventory 教程](quickstart/intro_inventory.md)
 - [临时命令 (ad hoc commands) 简介](quickstart/intro_adhoc.md)
+- [Playbooks 简介](quickstart/intro_playbooks.md)
 
 ## 基础语法
