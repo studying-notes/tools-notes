@@ -37,4 +37,8 @@ https://docs.ansible.com/ansible/latest/user_guide/index.html#table-of-contents
 - [Playbooks 简介](quickstart/intro_playbooks.md)
 - [Ansible 小抄](quickstart/cheatsheet.md)
 
-## 基础语法
+## 简单示例
+
+- [Nodejs Web App 部署](examples/nodejs/README.md)
+- [Nodejs Web App 部署进阶](examples/nodejs-role/README.md)
+- [本地构建 Docker 容器示例](examples/docker/README.md)
