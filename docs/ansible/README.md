@@ -35,5 +35,6 @@ https://docs.ansible.com/ansible/latest/user_guide/index.html#table-of-contents
 - [Inventory 教程](quickstart/intro_inventory.md)
 - [临时命令 (ad hoc commands) 简介](quickstart/intro_adhoc.md)
 - [Playbooks 简介](quickstart/intro_playbooks.md)
+- [Ansible 小抄](quickstart/cheatsheet.md)
 
 ## 基础语法
