@@ -25,3 +25,8 @@ draft: false  # 草稿
 - `assets/images`: 笔记配图
 - `assets/templates`: 笔记模板
 - `docs`: 各个软件的笔记
+
+## 目录
+
+- [multipass 轻量级虚拟机管理](docs/multipass.md)
+
