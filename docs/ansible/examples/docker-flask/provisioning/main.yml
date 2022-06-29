@@ -1,0 +1,21 @@
+---
+- hosts: ubuntu
+  become: true
+
+  environment:
+      http_proxy: http://192.168.0.12:7890
+      https_proxy: http://192.168.0.12:7890
+
+  vars:
+    build_root: /vagrant/provisioning
+
+  pre_tasks:
+    - name: Update apt cache if needed.
+      apt: update_cache=yes cache_valid_time=3600
+
+  roles:
+    - role: geerlingguy.docker
+
+  tasks:
+    - import_tasks: setup.yml
+    - import_tasks: docker.yml

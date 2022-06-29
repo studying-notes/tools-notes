@@ -1,0 +1,6 @@
+k3s-master-01: "--mem 1G --disk 20G 22.04"
+k3s-master-02: "--mem 1G --disk 20G 22.04"
+k3s-agent-01: "--mem 1G --disk 20G 22.04"
+k3s-agent-02: "--mem 1G --disk 20G 22.04"
+k3s-agent-03: "--mem 1G --disk 20G 22.04"
+k3s-agent-04: "--mem 1G --disk 20G 22.04"
