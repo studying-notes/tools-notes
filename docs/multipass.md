@@ -17,6 +17,8 @@ draft: true  # 草稿
 snap install multipass
 ```
 
+安装完成稍微等一下，服务启动没这么快
+
 ## 查询可用虚拟机列表
 
 ```bash
