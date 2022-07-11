@@ -20,8 +20,8 @@ apt install -y s3fs
 ## 配置
 
 ```bash
-echo null:null > ~/.passwd-s3fs
-chmod 600 ~/.passwd-s3fs
+echo null:null > .passwd-s3fs
+chmod 600 .passwd-s3fs
 ```
 
 ## 挂载
@@ -31,7 +31,7 @@ mkdir /mnt/s3
 ```
 
 ```bash
-s3fs test /mnt/s3 -o passwd_file=.passwd-s3fs -o url=http://192.168.0.16:8333 -o use_path_request_style
+s3fs main /mnt/s3 -o passwd_file=.passwd-s3fs -o url=http://192.168.0.16:8333 -o use_path_request_style
 ```
 
 ## 随机生成文件测试

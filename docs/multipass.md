@@ -78,6 +78,12 @@ multipass info
 multipass shell ubuntu-vm01
 ```
 
+root
+
+```bash
+multipass exec k3s-master-01 -- sudo bash
+```
+
 ### 从外部执行命令
 
 ```bash
@@ -115,6 +121,10 @@ multipass purge
 ```bash
 # 挂载格式
 multipass mount 宿主机目录  实例名:虚拟机目录
+```
+
+```bash
+multipass mount /root/projects k3s-master-01:/root/projects
 ```
 
 ### 卸载数据卷
@@ -155,10 +165,30 @@ runcmd 可以指定该虚拟机**首次启动**时运行的命令，这里我们
 
 凡是用户自定义的 cloud-init 的配置文件,必须以 `#cloud-config` 开头，这是 cloud-init 识别它的方式。
 
-```bash
+## 全部停止
 
+```bash
+multipass stop --all
+```
+
+## 全部开始
+
+```bash
+multipass start --all
+```
+
+## 全部删除
+
+```bash
+multipass delete --all
+```
+
+```bash
+multipass purge
 ```
 
 ```bash
 
 ```
+
+## 改变硬件
